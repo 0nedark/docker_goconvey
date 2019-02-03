@@ -9,4 +9,4 @@ RUN apk add --no-cache --virtual .deps git \
   && apk add --no-cache gcc musl-dev
 
 WORKDIR /code
-ENTRYPOINT ["goconvey", "-host", "0.0.0.0"]
+ENTRYPOINT ["goconvey", "-launchBrowser", "false", "-host", "0.0.0.0"]
